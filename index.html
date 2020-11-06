@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+</style>
+
 </head>
 
 <h2> Welcome to my test website lol </h2>
@@ -25,6 +27,9 @@
 <body>
 
   <script>
+
+
+
 
 
     if(new Date().getHours()<12){
@@ -207,6 +212,34 @@
 <br>
 <br>
 
+<h2> 2 Wierd Word Station (click button owo) </h2>
+
+<p id = "output"></p>
+
+<script>
+
+
+    var text = '{"words":[' +
+  '{"firstName":"car","lastName":"large"},' +
+  '{"firstName":"pp","lastName":"stuck"},' +
+  '{"firstName":"human","lastName":"scratch"}]}';
+
+obj = JSON.parse(text);
+
+function randomPick(){
+document.getElementById("output").innerHTML = 
+obj.words[Math.floor(Math.random() * 2 + 1)].firstName + " " + obj.words[Math.floor(Math.random() * 2 + 1)].lastName;
+}
+
+
+</script>
+
+<button onclick = "randomPick()"> Click here for random word matchups! </button>
+
+
+
+<br>
+
 <p>Code Goes here:</p>
 
 <br>
@@ -218,6 +251,8 @@
 <button id = "codeshower" type = "button" onclick = "showCode()"> Click to show the code inside </button>
 
 <button id = "removeCodeButton" type = "button" style = "display:none" onclick = "removeCode()"> Click to remove the code (because it's super long lol) </button>
+
+
 
 
 </body>
