@@ -143,6 +143,18 @@ obj.words[Math.floor(Math.random() * 2 + 1)].firstName + " " + obj.words[Math.fl
 }
 
 
+  function showWaifu(){
+    document.getElementById("waifu").style.display= 'block';
+    document.getElementById("hidewife").style.display = 'block';
+    document.getElementById("showwife").style.display = 'none';
+  }
+
+  function hideWaifu(){
+    document.getElementById("waifu").style.display = 'none';
+    document.getElementById("hidewife").style.display = 'none';
+    document.getElementById("showwife").style.display = 'block';
+  }
+
   </script>
 
 
@@ -180,8 +192,16 @@ obj.words[Math.floor(Math.random() * 2 + 1)].firstName + " " + obj.words[Math.fl
 <button type="button" onclick = "rollDie()"> Click To Roll The Dice! </button>
 
 
+<br>
+<br>
+<h2> Waifu picture for Mostepic lmaooo </h2>
 
+<img id = "waifu" style = "display:none" src = "https://media.discordapp.net/attachments/701965505182826687/774002013087203348/69ba73b1-06c7-4220-a83c-a5295eb497ea.png">
 
+<br>
+<button type = "button" id = "showwife" onclick = "showWaifu()"> Click to show waifu! :D </button>
+
+<button type = "button" id = "hidewife" style = "display:none" onclick = "hideWaifu()"> Click to hide waifu :(</button>
 
 <br>
 <br>
