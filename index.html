@@ -128,17 +128,6 @@
 
     }
 
-    function showCode(){
-      document.getElementById("code").style.display = 'block';
-      document.getElementById("removeCodeButton").style.display = 'block';
-    }
-
-    function removeCode(){
-      document.getElementById("code").style.display = 'none';
-      document.getElementById("removeCodeButton").style.display = 'none';
-    }
-
-
 
   function rollDie(){
     document.getElementById("dice").innerHTML = "You have rolled a " + Math.floor(Math.random() * 6 + 1) + "!";
@@ -170,6 +159,8 @@ obj.words[Math.floor(Math.random() * 2 + 1)].firstName + " " + obj.words[Math.fl
     document.getElementById("showwife").style.display = 'block';
   }
 
+
+  var link = "https://www.youtube.com/watch?v=oHg5SJYRHA0";
   </script>
 
 
@@ -312,9 +303,9 @@ obj.words[Math.floor(Math.random() * 2 + 1)].firstName + " " + obj.words[Math.fl
 
 <br>
 
-<button id = "codeshower" type = "button" onclick = "showCode()"> Click to show the code inside </button>
 
-<button id = "removeCodeButton" type = "button" style = "display:none" onclick = "removeCode()"> Click here to hide the code.</button>
+
+<button onclick = "location.assign(link)"> Press this button for milk </button>
 
 
 
