@@ -79,7 +79,7 @@
 
    var text = '{"words":[' +
   '{"firstName":"car","lastName":"large"},' +
-  '{"firstName":"pp","lastName":"stuck"},' +
+  '{"firstName":"hungry","lastName":"stuck"},' +
   '{"firstName":"human","lastName":"scratch"}]}';
 
 obj = JSON.parse(text);
